@@ -36,9 +36,11 @@ log_dest file /mosquitto/log/mosquitto.log
 **Note**: If a volume is used, the data will persist between containers.
 
 ## Build
-Build the image:
+Build, Tag & Push the image:
+
+First edit build.sh to make sure you're using the versions of Alpine and Mosquitto that you want, then run:
 ```
-docker build -t eclipse-mosquitto:1.4.14 .
+./build.sh
 ```
 
 ## Run
